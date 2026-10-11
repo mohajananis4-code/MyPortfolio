@@ -1,111 +1,347 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Certificates & Projects | Mohajanani</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificates & Projects | Mohajanani</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .page-heading {
+            margin: 40px 0 25px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(250px, 1fr)
+            );
+            gap: 22px;
+            margin: 25px 0 50px;
+        }
+
+        .card {
+            background: #151527;
+            border: 1px solid #38304d;
+            border-radius: 18px;
+            padding: 22px;
+            overflow: hidden;
+        }
+
+        .card h2,
+        .card h3 {
+            color: #facc15;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #c5c5d8;
+            line-height: 1.7;
+        }
+
+        .certificate-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            border: 2px solid #a855f7;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 11px 18px;
+            background: #a855f7;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #7e22ce;
+        }
+
+        .section-title {
+            color: #38bdf8;
+            margin-top: 35px;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 7px 12px;
+            border-radius: 20px;
+            background: #292044;
+            color: #c084fc;
+        }
+
+        .contact-card {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 480px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-<body><header>
-  <a class="logo" href="index.html">S.M<span></span></a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="education.html">Education & Skills</a>
-    <a class="active" href="projects.html">Certificates & Projects</a>
-  </nav>
-</header><main class="container">
-  <p class="tag">MY ACHIEVEMENTS</p>
-  <h1 class="page-title">Certificates & <span>Projects</span></h1>  <section class="card-grid">
-    <article class="card">
-      <div class="icon">🏆</div>
-      <h2>My Certificate</h2>
-      <p>View my certificate below.</p>
-      <a class="btn" href="certificate.pdf" target="_blank">
-        View Certificate ↗
-      </a>
-    </article><article class="card">
-  <div class="icon">💻</div>
-  <h2>Personal Portfolio</h2>
-  <p>A multi-page personal website created using HTML, CSS and JavaScript.</p>
-  <span class="badge">Web Development</span>
-</article>
 
-<article class="card">
-  <div class="icon">🎨</div>
-  <h2>Creative Editing</h2>
-  <p>A collection of my photo editing, video editing and graphic design work.</p>
-  <span class="badge">Creative Design</span>
-</article>
-<article class="card">
-  <h3>📱 Instagram Fan Page</h3>
-  <h2>21K+ Followers</h2>
-  <p>Managing an Instagram fan page with a community of 21K+ followers. Gaining experience in content curation, creative editing, audience engagement, and social media growth.</p>
-  <p><strong>Skills:</strong> Content Creation · Photo & Video Editing · Audience Engagement</p>
-</article>
-<section class="projects-section">
-  <h2>My Certificates 🏆</h2>
+<body>
 
-  <div class="project-grid">
+<header>
+    <a class="logo" href="index.html">
+        MOHAJANANI<span>.</span>
+    </a>
 
-    <div class="card">
-      <h3>📜 Certificate1</h3>
-      <p>My First Certification</p>
-      <a href="certificate1.pdf"
-         target="_blank"
-         class="btn">View Certificate</a>
-    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education & Skills</a>
+        <a class="active" href="project.html">
+            Certificates & Projects
+        </a>
+    </nav>
+</header>
 
-    <section class="projects-section">
-    <h2>My Certificates 🏆</h2>
+<main class="container">
 
-    <div class="project-grid">
+    <section class="page-heading">
+        <p class="section-title">MY ACHIEVEMENTS</p>
 
-        <div class="card">
-            <h3>📜 Certificate 1</h3>
-            <img src="certificate1.jpg"
-                 alt="Certificate 1"
-                 class="certificate-img">
-            <br>
-            <a href="certificate1.jpg"
-               target="_blank"
-               class="btn">View Certificate</a>
-        </div>
+        <h1>
+            Certificates & <span>Projects</span>
+        </h1>
 
-        <div class="card">
-            <h3>📜 Certificate 2</h3>
-            <img src="certificate2.jpg"
-                 alt="Certificate 2"
-                 class="certificate-img">
-            <br>
-            <a href="certificate2.jpg"
-               target="_blank"
-               class="btn">View Certificate</a>
-        </div>
-
-        <div class="card">
-            <h3>📜 Certificate 3</h3>
-            <img src="certificate3.jpg"
-                 alt="Certificate 3"
-                 class="certificate-img">
-            <br>
-            <a href="certificate3.jpg"
-               target="_blank"
-               class="btn">View Certificate</a>
-        </div>
-
-    </div>
+        <p>
+            Explore my certificates, technical projects,
+            creative editing work and social media experience.
+        </p>
     </section>
 
-  </div>
-</section>
 
-  </section>  <h2 class="section-title">Contact Me</h2>
-  <section class="card contact-card">
-    <p>Interested in connecting or collaborating?</p>
-    <p>Email:mohajananis4@gmail.com</p>
-    <p>LinkedIn:https://www.linkedin.com/in/mohajanani-s-60a759432?utm_source=share_via&utm_content=profile&utm_medium=member_android</p>
-  </section>
-</main><footer>© 2026 Mohajanani | Certificates & Projects</footer>
-<script src="script.js"></script>
+    <!-- CERTIFICATES -->
+
+    <section>
+        <h2 class="section-title">My Certificates 🏆</h2>
+
+        <div class="project-grid">
+
+            <!-- Certificate 1 -->
+
+            <article class="card">
+                <h3>📜 Certificate 1</h3>
+
+                <p>
+                    My first certificate.
+                </p>
+
+                <a href="certificate1.jpg" target="_blank">
+                    <img
+                        src="certificate1.jpg"
+                        alt="Certificate 1"
+                        class="certificate-img"
+                    >
+                </a>
+
+                <a
+                    href="certificate1.jpg"
+                    target="_blank"
+                    class="btn"
+                >
+                    View Certificate ↗
+                </a>
+            </article>
+
+
+            <!-- Certificate 2 -->
+
+            <article class="card">
+                <h3>📜 Certificate 2</h3>
+
+                <p>
+                    My second certificate.
+                </p>
+
+                <a href="certificate2.jpg" target="_blank">
+                    <img
+                        src="certificate2.jpg"
+                        alt="Certificate 2"
+                        class="certificate-img"
+                    >
+                </a>
+
+                <a
+                    href="certificate2.jpg"
+                    target="_blank"
+                    class="btn"
+                >
+                    View Certificate ↗
+                </a>
+            </article>
+
+
+            <!-- Certificate 3 -->
+
+            <article class="card">
+                <h3>📜 Certificate 3</h3>
+
+                <p>
+                    My third certificate.
+                </p>
+
+                <a href="certificate3.jpg" target="_blank">
+                    <img
+                        src="certificate3.jpg"
+                        alt="Certificate 3"
+                        class="certificate-img"
+                    >
+                </a>
+
+                <a
+                    href="certificate3.jpg"
+                    target="_blank"
+                    class="btn"
+                >
+                    View Certificate ↗
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section>
+        <h2 class="section-title">My Projects 💻</h2>
+
+        <div class="project-grid">
+
+            <article class="card">
+                <h3>🌐 Personal Portfolio</h3>
+
+                <p>
+                    A personal portfolio website created using
+                    HTML and CSS to showcase my education,
+                    skills, certificates and projects.
+                </p>
+
+                <span class="badge">HTML & CSS</span>
+            </article>
+
+
+            <article class="card">
+                <h3>🎨 Creative Editing</h3>
+
+                <p>
+                    I have an interest in photo editing,
+                    video editing and graphic design.
+                    I enjoy creating attractive visual content.
+                </p>
+
+                <span class="badge">Creative Design</span>
+            </article>
+
+
+            <article class="card">
+                <h3>📱 Instagram Fan Page</h3>
+
+                <h2>21K+ Followers</h2>
+
+                <p>
+                    Managing an Instagram fan page with a
+                    community of more than 21,000 followers.
+                    This experience helps me learn content
+                    creation, audience engagement and social media growth.
+                </p>
+
+                <span class="badge">
+                    Content Creation
+                </span>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section>
+        <h2 class="section-title">My Skills ✨</h2>
+
+        <div class="project-grid">
+
+            <article class="card">
+                <h3>💻 Technical Skills</h3>
+
+                <p>
+                    C Programming<br>
+                    HTML<br>
+                    Python
+                </p>
+            </article>
+
+
+            <article class="card">
+                <h3>🎬 Creative Skills</h3>
+
+                <p>
+                    Photo Editing<br>
+                    Video Editing<br>
+                    Graphic Design
+                </p>
+            </article>
+
+
+            <article class="card">
+                <h3>🤝 Personal Skills</h3>
+
+                <p>
+                    Communication<br>
+                    Teamwork<br>
+                    Confidence<br>
+                    Willingness to Learn
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact-card">
+        <h2 class="section-title">Contact Me 📩</h2>
+
+        <article class="card">
+            <h3>Let's Connect!</h3>
+
+            <p>
+                I am a first-year Computer Science and
+                Engineering student who is interested in
+                technology, creative editing and learning
+                new skills.
+            </p>
+
+            <p>
+                Thank you for visiting my portfolio!
+            </p>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        © 2026 Mohajanani | Personal Portfolio
+    </p>
+</footer>
+
 </body>
 </html>
